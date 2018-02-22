@@ -101,7 +101,7 @@ class Productivity extends Component {
                 </div>
                 <div className="column">
                   <div className="radial centered">
-                    <h6><i className="fal fa-clock" /> Work</h6>
+                    <h6><i className={`fal ${workProgress >= 100 ? 'fa-check-circle' : 'fa-clock'}`} /> Work</h6>
                     <CircularProgressbar
                       initialAnimation
                       percentage={workProgress}
