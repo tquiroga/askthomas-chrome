@@ -2,6 +2,14 @@
 
 A chrome extension to connect your RescueTime data and set your own targets.
 
+![alt screenshot](https://raw.githubusercontent.com/tquiroga/askthomas-chrome/master/screenshot.png)
+
+## Features
+
+- Weather
+- RescueTime and personal target integration
+- Programming quotes
+
 ## Setup
 
 1. Clone the repository.
