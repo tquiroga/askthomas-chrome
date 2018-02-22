@@ -20,7 +20,7 @@ const App = () => {
         </div>
       </div>
       <div id="numbers" className="container">
-        <h1>Good {greeting} Thomas</h1>
+        <h1>Good {greeting} {settings.firstname}</h1>
         <Productivity greeting={greeting} />
         {settings.bottomWidget === 'crypto' ? <Crypto /> : <Quote />}
       </div>

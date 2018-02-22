@@ -8,7 +8,8 @@ A chrome extension to connect your RescueTime data and set your own targets.
 
 - Weather
 - RescueTime and personal target integration
-- Programming quotes
+- Cool Programming quotes
+- Cryptocurrencies price and 24h trend
 
 ## Setup
 
@@ -27,7 +28,7 @@ A chrome extension to connect your RescueTime data and set your own targets.
 ## Settings
 
 Set the values in `src/settings.json`:
-
+- `firstname`: Your firstname.
 - `work.start`: The time you start working, make sure it's a 24h hour format `XX:XX`
 - `work.end`: The time you start working, make sure it's a 24h hour format `XX:XX`
 - `target.hours`: The number of hours you want to work in a day (number, e.g: 8)

@@ -1,4 +1,5 @@
 {
+  "firstname": "Jo",
   "work": {
     "start": "09:30",
     "end": "22:30"
@@ -11,6 +12,8 @@
   "weather": {
     "city": "Edinburgh,uk"
   },
+  "bottomWidget": "crypto",
+  "coins": ["bitcoin", "ethereum", "litecoin"],
   "keys": {
     "openWeatherMap": "xxxxxxxxxxxxxxxxxxxxxxx",
     "rescueTime": "xxxxxxxxxxxxxxxxxxxxxxx"
