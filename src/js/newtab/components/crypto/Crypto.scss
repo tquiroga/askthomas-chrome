@@ -1,0 +1,23 @@
+.Crypto {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: 'none';
+      display: inline-block;
+      padding: 0.75rem 10px;
+      font-size: 0.7em;
+
+      .up-green {
+        color: #27ae60;
+      }
+      .down-red {
+        color: #c0392b;
+      }
+    }
+  }
+}

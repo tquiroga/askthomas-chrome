@@ -87,7 +87,7 @@ class Productivity extends Component {
               <div className="columns">
                 <div className="column">
                   <div className="radial float-right">
-                    <h6><i className="fal fa-sun yellow-sun" /> Day</h6>
+                    <h6><i className={`fal ${greeting === 'evening' ? 'fa-moon' : 'fa-sun'} yellow-sun`} /> Day</h6>
                     <CircularProgressbar
                       initialAnimation
                       percentage={dayProgress}

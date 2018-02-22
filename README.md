@@ -34,6 +34,8 @@ Set the values in `src/settings.json`:
 - `target.minutes`: If more than plain hours (e.g: 30 -> for 8 hours and 30 minutes)
 - `target.pulse`: The productivity pulse you target for the day (Number between 1-100)
 - `weather.city`: Your city and country code (e.g: Paris,fr - London,uk, - Madrid,es)
+- `bottomWidget`: Choose between widget you want at the bottom of the screen, options are: `crypto` or `quote`
+- `coins`: Coins you want to see listed. Use [the `id`](https://api.coinmarketcap.com/v1/ticker/) of the coins.
 - `keys`: API keys, see below
 
 ## APIs

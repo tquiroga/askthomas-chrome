@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 
-import { Productivity, Quote, Weather } from './components';
+import { Productivity, Quote, Weather, Crypto } from './components';
 import { getGreetingTime } from './helpers';
+import settings from '../../settings.json';
 import '../vendors/fontawesome-all.min.js';
 import './App.scss';
 
@@ -21,7 +22,7 @@ const App = () => {
       <div id="numbers" className="container">
         <h1>Good {greeting} Thomas</h1>
         <Productivity greeting={greeting} />
-        <Quote />
+        {settings.bottomWidget === 'crypto' ? <Crypto /> : <Quote />}
       </div>
     </div>
   );
