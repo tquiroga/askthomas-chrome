@@ -75,7 +75,7 @@ class Productivity extends Component {
     const pulse = this.getProductivityPulse();
     const greeting = this.props.greeting;
 
-    if (settings.keys.rescueTime) {
+    if (settings.keys.rescueTime === "") {
       return <p className="text-center">Set your RescueTime API key in settings.json and your daily target</p>;
     }
 
