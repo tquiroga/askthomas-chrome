@@ -1,0 +1,14 @@
+.Quote {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+
+  blockquote {
+    font-size: 0.75em;
+    color: #ddd;
+    border: 0;
+    p {
+      margin-bottom: 5px;
+    }
+  }
+}

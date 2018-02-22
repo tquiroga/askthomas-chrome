@@ -1,0 +1,100 @@
+div.Productivity {
+
+  div.radial {
+    width: 100px;
+  }
+
+  /*
+  *   Colors
+  *
+  */
+  .red-beat {
+    color: #fc5c65;
+  }
+
+  .yellow-sun {
+    color: #FFC312;
+  }
+
+}
+
+
+
+
+  /*
+  * react-circular-progressbar styles
+  *
+  * All of the styles in this file are optional and configurable!
+  */
+
+  .CircularProgressbar {
+    /*
+    * This fixes an issue where the CircularProgressbar svg has
+    * 0 width inside a "display: flex" container, and thus not visible.
+    *
+    * If you're not using "display: flex", you can remove this style.
+    */
+    width: 100%;
+  }
+
+  .CircularProgressbar .CircularProgressbar-path {
+    stroke: #3e98c7;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease 0s;
+  }
+
+  .CircularProgressbar .CircularProgressbar-trail {
+    stroke: #d6d6d6;
+  }
+
+  .CircularProgressbar .CircularProgressbar-text {
+    fill: #fff;
+    font-size: 20px;
+    dominant-baseline: middle;
+    text-anchor: middle;
+  }
+
+  .CircularProgressbar .CircularProgressbar-background {
+    fill: #d6d6d6;
+  }
+
+  /*
+  * Sample background styles. Use these with e.g.:
+  *
+  *   <CircularProgressbar
+  *     className="CircularProgressbar-inverted"
+  *     background
+  *     percentage={50}
+  *   />
+  */
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-background {
+    fill: #3e98c7;
+  }
+
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text {
+    fill: #fff;
+  }
+
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-path {
+    stroke: #fff;
+  }
+
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-trail {
+    stroke: transparent;
+  }
+
+  .progressbar-green {
+    .CircularProgressbar-path { stroke: #20bf6b; }
+  }
+  .progressbar-red {
+    .CircularProgressbar-path { stroke: #fc5c65 }
+  }
+  .progressbar-morning {
+    .CircularProgressbar-path { stroke: #fbc531 }
+  }
+  .progressbar-afternoon {
+    .CircularProgressbar-path { stroke: #00a8ff; }
+  }
+  .progressbar-evening {
+    .CircularProgressbar-path { stroke: #182C61 }
+  }

@@ -1,0 +1,23 @@
+{
+  "name": "AskThomas",
+  "options_page": "options.html",
+  "chrome_url_overrides": {
+    "newtab": "override.html"
+  },
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "manifest_version": 2,
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite",
+    "cookies",
+    "idle",
+    "notifications",
+    "tabs",
+    "storage",
+    "geolocation",
+    "https://www.rescuetime.com/*"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.rescuetime.com/*; object-src 'self' https://www.rescuetime.com/*; connect-src 'self' https://* http://*"
+}

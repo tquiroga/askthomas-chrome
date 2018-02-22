@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+@import "node_modules/spectre.css/src/spectre";
+
+#app {
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  background: linear-gradient(36deg, #001a6c, #1b8bd5);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 43%}
+      50%{background-position:100% 58%}
+      100%{background-position:0% 43%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 43%}
+      50%{background-position:100% 58%}
+      100%{background-position:0% 43%}
+  }
+  @keyframes AnimationName { 
+      0%{background-position:0% 43%}
+      50%{background-position:100% 58%}
+      100%{background-position:0% 43%}
+  }
+}
+
+#topbar {
+  .calendar {
+    float: right;
+    padding: 0.75rem;
+  }
+  .weather {
+    float: left;
+    padding: 0.75rem;
+  }
+}
+
+#numbers {
+  text-align: center;
+  padding-top: 30vh;
+
+  h1 {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 100;
+  }
+}
+
+.fadeIn {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Firefox < 16 */
+    @-moz-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Safari, Chrome and Opera > 12.1 */
+    @-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Internet Explorer */
+    @-ms-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Opera < 12.1 */
+    @-o-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+  }
