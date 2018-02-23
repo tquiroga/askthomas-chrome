@@ -32,7 +32,7 @@ class Productivity extends Component {
     });
   }
 
-  getTotalTime() {
+  getTotalTimeWorked() {
     const totalSeconds = _.sumBy(this.state.rows, row => row[1]);
     const totalMinutes = (totalSeconds / 60).toFixed();
     return {
@@ -41,7 +41,7 @@ class Productivity extends Component {
     }
   }
 
-  getWorkPercentage() {
+  getWorkTargetPercentage() {
     const target = (settings.target.hours * 3600) + (settings.target.minutes * 60);
     const totalSeconds = _.sumBy(this.state.rows, row => row[1]);
     return ((totalSeconds / target) * 100).toFixed();
@@ -58,7 +58,7 @@ class Productivity extends Component {
     return (((vd * 0) + (d * 1) + (n * 2) + (p * 3) + (vp * 4)) / (total * 4)) * 100;
   }
 
-  getDayProgress() {
+  getDayPercentage() {
     const startTime = settings.work.start.split(':');
     const endTime = settings.work.end.split(':');
     const todayMorning = moment().hour(startTime[0]).minutes(startTime[1]).seconds(0);
@@ -69,9 +69,9 @@ class Productivity extends Component {
   }
 
   render() {
-    const total = this.getTotalTime();
-    const dayProgress = this.getDayProgress();
-    const workProgress = this.getWorkPercentage();
+    const total = this.getTotalTimeWorked();
+    const dayProgress = this.getDayPercentage();
+    const workProgress = this.getWorkTargetPercentage();
     const pulse = this.getProductivityPulse();
     const greeting = this.props.greeting;
 

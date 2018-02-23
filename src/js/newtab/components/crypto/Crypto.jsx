@@ -18,7 +18,6 @@ export default class Crypto extends Component {
         limit: 100,
       },
     }).then(function (res) {
-      console.log(res.data);
       this.setState({ cryptos: res.data });
     }.bind(this)).catch((err) => {
       console.log(err);
@@ -40,7 +39,7 @@ export default class Crypto extends Component {
                     <li key={c.symbol}>
                       <span>{c.symbol}</span> &nbsp; 
                       $ {cryptoPrice > 10 ? cryptoPrice.toFixed(2) : cryptoPrice.toFixed(4)} &nbsp;
-                      {c.percent_change_24h < 0 ? <i class="fas fa-sort-down down-red" /> : <i class="fas fa-sort-up up-green" />}
+                      {c.percent_change_24h < 0 ? <i className="fas fa-sort-down down-red" /> : <i className="fas fa-sort-up up-green" />}
                     </li>
                   );
                 })}
