@@ -45,7 +45,7 @@ export default class Weather extends Component {
     const { weather } = this.state;
     if (this.state.weather) {
       return (
-        <div className="Weather fadeIn">
+        <div className="Weather fadeIn" title={weather.weather[0].main}>
           <i className={this.getWeatherIconClass(weather.weather[0].id)} /> {Math.round(weather.main.temp)} C&deg; {weather.name}
         </div>
       );
